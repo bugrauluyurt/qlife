@@ -1,0 +1,119 @@
+// Variables
+$blue-color:#1b75bb;
+$green-color:#00a550;
+
+.header h1.logo a {
+	background-color: $blue-color;
+}
+
+.header h1.logo a.logo-attach-2 {
+	display:none;
+	padding-top:15px;
+	padding-bottom:0px;
+	margin-top:15px;
+}
+
+.header h1.logo a.logo-attach-2 img {
+	margin-top:12px;
+	margin-left:-25px;
+}
+
+.container.text-center > h2 {
+	font-weight:200;
+}
+
+#dna-image {
+	margin-bottom:30px;
+	margin-top:-50px;
+}
+
+.hidden {
+	display:none;
+}
+
+section.promo.section-on-bg p > a {
+	background-color:$green-color;
+	border-color:$green-color;
+}
+
+section.promo.section-on-bg div > button {
+	text-transform:capitalize;
+}
+
+ul.nav.navbar-nav li.nav-item.active > a {
+	color:$green-color !important;
+}
+
+ul.nav.navbar-nav li.nav-item > a:hover {
+	color:$green-color !important;
+}
+
+ul.nav.navbar-nav li.nav-item.nav-item-cta > a:hover {
+	background-color:$green-color !important;
+	color:#ffffff !important;
+	border-color:$green-color !important;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+ #dna-image {
+ 	display:none;
+ }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
