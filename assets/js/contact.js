@@ -6,13 +6,13 @@ $(document).ready(function() {
 		messages: {
 		
 		    name: {
-    			required: 'Please enter your name' //You can customise this message
+    			required: 'Lütfen isminizi yazınız' //You can customise this message
 			},
 			email: {
-				required: 'Please enter your email' //You can customise this message
+				required: 'Lütfen eposta adresinizi yazınız' //You can customise this message
 			},			
 			message: {
-				required: 'Please enter your message' //You can customise this message
+				required: 'Lütfen mesajınızı yazınız' //You can customise this message
 			}
 			
 		}

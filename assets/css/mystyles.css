@@ -12,7 +12,7 @@
   margin-left: -25px; }
 
 .container.text-center > h2 {
-  font-weight: 200; }
+  font-weight: 400; }
 
 #dna-image {
   margin-bottom: 30px;
@@ -59,29 +59,123 @@ ul.nav.navbar-nav li.nav-item.nav-item-cta > a:hover {
 .carousel-inner p#slide-item1 {
   color: #d61d7d; }
 
+.carousel-inner p#slide-item2 {
+  color: #00ac9e; }
+
+.carousel-inner p#slide-item3 {
+  color: #008bc1; }
+
+.carousel-inner p#slide-item4 {
+  color: #4e1b3d; }
+
 .testimonials .carousel-indicators li.active {
   background: #666666; }
+
+.carousel-inner p.content-text {
+  font-size: 16px; }
+
+.testimonials {
+  padding-bottom: 80px; }
+
+.testimonials .title {
+  font-weight: 400; }
+
+.cta-section {
+  padding-top: 120px; }
+
+.cta-section .title {
+  font-weight: 400; }
+
+div.row-features {
+  margin-top: -60px; }
+
+div.feature-header h2 {
+  margin-bottom: 15px !important; }
+
+div.feature-header h3 {
+  color: #ffffff;
+  font-weight: 200;
+  padding-top: 15px; }
+
+div.feature-header p {
+  font-weight: 200;
+  color: white; }
+
+ul.nav.nav-tabs li {
+  background-color: #fafafa; }
+
+ul.nav.nav-tabs li a {
+  background: transparent; }
+
+ul.nav.nav-tabs li.active a {
+  background: transparent; }
+
+ul.nav.nav-tabs li.active {
+  background-color: #ffffff; }
+
+div.headline-feature {
+  height: 400px; }
+
+figure.feature-figure {
+  box-shadow: none;
+  margin-top: -20px; }
+
+figure.feature-figure img {
+  box-shadow: none !important; }
+
+.row-directions > div > img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px; }
+
+p.contact-text span {
+  color: #00a550;
+  font-size: 25px; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
   #dna-image {
-    display: none; } }
+    display: none; }
+
+  div.row-features {
+    margin-top: -135px; } }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
-  /* Styles */ }
+  /* Styles */
+  div.row-features {
+    margin-top: -110px; } }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-  /* Styles */ }
+  /* Styles */
+  div.row-features {
+    margin-top: -135px; } }
+/* Smartphones (iphone 6 portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 375px) {
+  /* Styles */
+  div.row-features {
+    margin-top: -145px; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */ }
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */ }
+  /* Styles */
+  div.row-features {
+    margin-top: -60px; } }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */ }
+  /* Styles */
+  .features-video {
+    padding-top: 30px; }
+
+  div.row-features {
+    margin-top: -70px; }
+
+  p.truncate {
+    height: 70px;
+    overflow: hidden; } }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */
@@ -91,10 +185,15 @@ ul.nav.navbar-nav li.nav-item.nav-item-cta > a:hover {
     color: #00a550; }
 
   .header.scrolled .main-nav .nav .nav-item.nav-item-cta a.btn-cta-secondary:hover {
-    background-color: #497cb1; } }
+    background-color: #497cb1; }
+
+  div.row-features {
+    margin-top: -60px; } }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
-  /* Styles */ }
+  /* Styles */
+  div.row-features {
+    margin-top: -60px; } }
 /* iPhone 4 ----------- */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* Styles */ }
