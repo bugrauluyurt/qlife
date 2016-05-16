@@ -1,5 +1,5 @@
 // Variables
-$blue-color:#1b75bb;
+$blue-color:#497cb1;
 $green-color:#00a550;
 
 .header h1.logo a {
@@ -54,6 +54,35 @@ ul.nav.navbar-nav li.nav-item.nav-item-cta > a:hover {
 	border-color:$green-color !important;
 }
 
+#life-section > figure > img {
+	border-radius:5px;
+	-webkit-box-shadow: -1px 7px 8px -7px rgba(0,0,0,0.36);
+	-moz-box-shadow: -1px 7px 8px -7px rgba(0,0,0,0.36);
+	box-shadow: -1px 7px 8px -7px rgba(0,0,0,0.36);
+}
+
+#life-section > div > h3.title {
+	font-size:35px;
+	color:#bed530;
+	font-weight:400;
+}
+
+#life-section div.desc p > a {
+	color:$blue-color;
+}
+
+.carousel-inner p.source {
+	font-size:25px;
+}
+
+.carousel-inner p#slide-item1 {
+	color:#d61d7d;
+}
+
+.testimonials .carousel-indicators li.active {
+	background:#666666;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -103,6 +132,15 @@ and (orientation : portrait) {
 @media only screen 
 and (min-width : 1224px) {
 /* Styles */
+	.header.scrolled .main-nav .nav .nav-item.nav-item-cta a.btn-cta-secondary {
+		background-color:transparent;
+		border:1px solid $green-color;
+		color:$green-color;
+	}
+	.header.scrolled .main-nav .nav .nav-item.nav-item-cta a.btn-cta-secondary:hover {
+		background-color:$blue-color;
+	}
+
 }
 
 /* Large screens ----------- */

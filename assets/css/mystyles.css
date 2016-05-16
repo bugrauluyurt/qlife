@@ -1,5 +1,5 @@
 .header h1.logo a {
-  background-color: #1b75bb; }
+  background-color: #497cb1; }
 
 .header h1.logo a.logo-attach-2 {
   display: none;
@@ -39,6 +39,29 @@ ul.nav.navbar-nav li.nav-item.nav-item-cta > a:hover {
   color: #ffffff !important;
   border-color: #00a550 !important; }
 
+#life-section > figure > img {
+  border-radius: 5px;
+  -webkit-box-shadow: -1px 7px 8px -7px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: -1px 7px 8px -7px rgba(0, 0, 0, 0.36);
+  box-shadow: -1px 7px 8px -7px rgba(0, 0, 0, 0.36); }
+
+#life-section > div > h3.title {
+  font-size: 35px;
+  color: #bed530;
+  font-weight: 400; }
+
+#life-section div.desc p > a {
+  color: #497cb1; }
+
+.carousel-inner p.source {
+  font-size: 25px; }
+
+.carousel-inner p#slide-item1 {
+  color: #d61d7d; }
+
+.testimonials .carousel-indicators li.active {
+  background: #666666; }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   /* Styles */
@@ -61,7 +84,14 @@ ul.nav.navbar-nav li.nav-item.nav-item-cta > a:hover {
   /* Styles */ }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
-  /* Styles */ }
+  /* Styles */
+  .header.scrolled .main-nav .nav .nav-item.nav-item-cta a.btn-cta-secondary {
+    background-color: transparent;
+    border: 1px solid #00a550;
+    color: #00a550; }
+
+  .header.scrolled .main-nav .nav .nav-item.nav-item-cta a.btn-cta-secondary:hover {
+    background-color: #497cb1; } }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   /* Styles */ }
