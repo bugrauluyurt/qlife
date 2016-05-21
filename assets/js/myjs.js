@@ -1,7 +1,7 @@
 /* Write here your custom javascript codes */
 jQuery(document).ready(function() {
     $('.logo-attach-2').hide();
-    if ($.browser.desktop && $(window).width()>1024) {
+    if ($.browser.desktop || $(window).width() > 1023) {
         if ($('#dna-image').hasClass('hidden')) {
             $('#dna-image').removeClass('hidden');
         }
