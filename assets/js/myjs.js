@@ -18,4 +18,11 @@ jQuery(document).ready(function() {
     } else {
         $('#dna-image').addClass('hidden');
     }
+
+    $(".typed-text").typed({
+        strings: ["7436", "QGEN"],
+        typeSpeed: 800,
+        loop:true,
+        showCursor: false
+    });
 });
