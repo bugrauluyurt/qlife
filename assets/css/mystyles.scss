@@ -3,7 +3,10 @@ $blue-color:#497cb1;
 $green-color:#00a550;
 
 .header h1.logo a {
-	background-color: $blue-color;
+	background:none;
+	max-width:200px;
+	padding-left:0px;
+	padding-right:0px;
 }
 
 .header h1.logo a.logo-attach-2 {
@@ -15,11 +18,15 @@ $green-color:#00a550;
 
 .header h1.logo a.logo-attach-2 img {
 	margin-top:12px;
-	margin-left:-25px;
+	margin-left:25px;
 }
 
 .container.text-center > h2 {
 	font-weight:400;
+}
+
+.footer {
+	font-size:16px;
 }
 
 #dna-image {
@@ -201,6 +208,65 @@ p.contact-text span {
     100% { opacity:1; }
 }
 
+.table-compare {
+	background-color:white;
+	color:#5b5b5b;
+	font-size:14px;
+	padding:20px;
+	max-width:700px;
+	margin:0 auto;
+	border-radius:3px;
+	border:1px solid #ededed;
+	display:none;
+}
+
+.table-compare th {
+	font-size:18px;
+	border-bottom: 1px dashed #efefef;
+	padding-left:20px;
+	padding-bottom:15px;
+	color:#444444;
+	font-weight:400;
+	text-align:center;
+}
+
+.table-compare td {
+	padding-left:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	text-align:center;
+}
+
+.table-compare td i.fa.fa-times {
+	color:#999999;
+}
+
+.table-compare tr {
+	border-bottom:1px solid #ededed;
+	padding:20px 0px;
+}
+
+.table-compare tr:first-child, .table-compare tr:last-child  {
+	border-bottom:none;
+}
+
+.table-compare td:first-child {
+	text-align:inherit;
+}
+
+.table-compare table tr:first-child  {
+	margin-top:20px;
+}
+
+.promo.section .intro {
+	max-width:800px;
+}
+input, textarea {
+	font-weight:bold;
+	font-size:16px;
+}
+
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -211,7 +277,16 @@ and (max-device-width : 480px) {
  }
  div.row-features {
 	margin-top:-135px;
-	}
+ }
+ .header h1.logo a {
+	margin-left:0px;
+ }
+ .container.text-center > h2 {
+ 	padding-top:15px;
+ }
+ .container h2.title-class {
+ 	padding-top:40px;
+ }
  
 }
 
@@ -241,7 +316,20 @@ and (max-device-width : 375px) {
  div.row-features {
 	margin-top:-145px;
  }
+ .container.qlife-fit h2 {
+	padding-top:45px;
+ }
+ div.headline-feature.qlife-fit {
+ 	height:500px;
+ }
+
  
+}
+
+@media (width: 667px) {
+	.container h2 {
+ 		padding-top:40px;
+ 	}
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -278,7 +366,17 @@ and (orientation : portrait) {
 		height:70px;
 		overflow:hidden;
  	}
+ 	.headline-bg {
+ 		height:650px;
+ 	}
 }
+
+@media (min-width: 992px) {
+	.promo {
+		height:520px;
+	}
+}
+
 
 /* Desktops and laptops ----------- */
 @media only screen 
@@ -294,6 +392,15 @@ and (min-width : 1224px) {
 	}
 	div.row-features {
 		margin-top:-60px;
+	}
+	.table-compare {
+		display:inherit;
+	}
+	.price-cols {
+		display:none;
+	}
+	.header h1.logo a {
+		margin-left:-50px;
 	}
 
 }
@@ -312,4 +419,5 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
+
 }

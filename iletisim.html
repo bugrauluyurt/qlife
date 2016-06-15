@@ -3,13 +3,15 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <title>Qlife | İletişim</title>
+    <title>QLife | İletişim</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">    
+    <meta name="description" content="Qlife Genetik Test">
+    <meta name="keywords" content="qlife, qlifegenomics, genetik test, genetiktest, qlifefit, qlife fit, intolerans test, pinner test">
+    <meta name="author" content="">
+    <link rel="alternate" href="http://www.qlifegenomics.com" hreflang="tr-tr" />    
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900,900italic,300italic,300' rel='stylesheet' type='text/css'> 
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
@@ -33,8 +35,8 @@
     <header id="header" class="header navbar-fixed-top">  
         <div class="container">       
             <h1 class="logo">
-                <a class="logo-attach-1" href="index.html"><span class="text"><img src="/assets/images/logo-white.png" alt="qlife" width="75"></span></a>
-                <a class="logo-attach-2" href="index.html"><span class="text"><img src="/assets/images/logo-gray.png" alt="qlife" width="75"></span></a>
+                <a class="logo-attach-1" href="index.html"><span class="text"><img src="/assets/images/logo-white-2.png" alt="qlife" width="200"></span></a>
+                <a class="logo-attach-2" href="index.html"><span class="text"><img src="/assets/images/logo-gray-2.png" alt="qlife" width="75"></span></a>
             </h1><!--//logo-->
             <nav class="main-nav navbar-right" role="navigation">
                 <div class="navbar-header">
@@ -51,11 +53,11 @@
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" href="#">Testler <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="qlifefit.html">Qlife | Fit</a></li> 
+                                <li><a href="qlifefit.html">QLife | Fit</a></li> 
                             </ul>                            
                         </li><!--//dropdown-->
                         <li class="nav-item"><a href="karsilastirma.html">Karşılaştırma</a></li>
-                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="iletisim.html">İletişim</a></li>
+                        <li class="nav-item nav-item-cta last"><a class="btn btn-cta btn-cta-secondary" href="iletisim.html">İLETİŞİM</a></li>
                     </ul><!--//nav-->
                 </div><!--//navabr-collapse-->
             </nav><!--//main-nav-->                     
@@ -69,27 +71,26 @@
         <!-- ******Contact Section****** --> 
         <section class="contact-section section section-on-bg">
             <div class="container">
-                <h2 class="title text-center">İletişim</h2>
+                <h2 class="title text-center title-class">İletişim</h2>
                 <p class="intro text-center contact-text">Mesaj göndermek için aşağıdaki formu kullanabilir. <br>Test siparişi için doğrudan <span>0850 840 <span class="typed-text"></span> </span>nolu telefonu arayarak <br>iletişime geçebilirsiniz.</p>
-                <form id="contact-form" class="contact-form" method="post" action="">                    
+                <form id="contact-form" class="contact-form" role="form" action="send-mail-smtp.php" method="POST">
                     <div class="row text-center">
                         <div class="contact-form-inner col-md-8 col-sm-12 col-xs-12 col-md-offset-2 col-sm-offset-0 xs-offset-0">
-                            <div class="row">                                                           
-                                
+                            <div class="row">
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                                     <label class="sr-only" for="cname">İsminiz</label>
-                                    <input type="text" class="form-control" id="cname" name="name" placeholder="İsminiz" minlength="2" required>
+                                    <input type="text" class="form-control" id="field_name" name="sender_name" placeholder="İsminiz" minlength="2" required>
                                 </div>                    
                                 <div class="col-md-6 col-sm-6 col-xs-12 form-group">
                                     <label class="sr-only" for="cemail">Eposta adresiniz</label>
-                                    <input type="email" class="form-control" id="cemail" name="email" placeholder="Eposta adresiniz" required>
+                                    <input type="email" class="form-control" id="field_email" name="sender_email" placeholder="Eposta adresiniz" required>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 form-group">
                                     <label class="sr-only" for="cmessage">Mesajınız</label>
-                                    <textarea class="form-control" id="cmessage" name="message" placeholder="Mesajınızı yazın" rows="12" required></textarea>
+                                    <textarea class="form-control" id="field_message" name="sender_message" placeholder="Mesajınızı yazın" rows="12" required></textarea>
                                 </div>
                                  <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                                    <button type="submit" class="btn btn-block btn-cta btn-cta-primary">Mesajı gönder</button>
+                                    <button type="submit" name="send_message" class="btn btn-block btn-cta btn-cta-primary">Mesajı gönder</button>
                                 </div>                           
                             </div><!--//row-->
                         </div>
@@ -108,8 +109,8 @@
                     <ul class="other-info list-unstyled col-md-6 col-sm-10 col-xs-12 col-md-offset-3 col-sm-offset-1 xs-offset-0" >
                         <li><i class="fa fa-envelope-o"></i><a href="#">info@qlifegenomics.com</a></li>
                         <li><i class="fa fa-instagram"></i><a href="#" target="_blank">qlifegenomics</a></li>
-                        <li><i class="fa fa-phone"></i><a href="#">0312 467 98 46</a></li>
-                        <li><i class="fa fa-map-marker"></i>Uğur Mumcu Sok. <br /> 56/4<br Çankaya<br />Ankara<br />Türkiye</li>
+                        <li><i class="fa fa-phone"></i><a href="#">0850 840 74 36</a></li>
+                        <li><i class="fa fa-map-marker"></i>BJK Plaza. A Blok <br /> Daire 67. Kat:6<br> Beşiktaş, İstanbul</li>
                     </ul>
                 </div><!--//row-->
             </div><!--//container-->
@@ -118,8 +119,8 @@
         <!-- ******Map Section****** --> 
         <section class="map-section section">
             <div class="container text-center">
-                <h2 class="title">Ofisimiz nerede?</h2>
-                <p class="intro">Ofisimizin yeri harita üzerine işaretlenmiştir.</p>
+                <h2 class="title office">Of<span>i</span>simiz nerede?</h2>
+                <p class="intro">Of<span>i</span>simizin yeri harita üzerine işaretlenmiştir.</p>
                 <div class="gmap-wrapper">
                     <div class="gmap" id="map"></div><!--//map-->
                 </div><!--//gmap-wrapper-->
@@ -138,7 +139,7 @@
                             <h3 class="title">Site içeriği</h3>
                             <ul class="list-unstyled">
                                 <li><a href="index.html"><i class="fa fa-caret-right"></i>Anasayfa</a></li>
-                                <li><a href="qlifefit.html"><i class="fa fa-caret-right"></i>Qlife | Fit</a></li>
+                                <li><a href="qlifefit.html"><i class="fa fa-caret-right"></i>QLife | Fit</a></li>
                                 <li><a href="karsilastirma.html"><i class="fa fa-caret-right"></i>Karşılaştırma</a></li>
                                 <li><a href="iletisim.html"><i class="fa fa-caret-right"></i>İletişim</a></li>
                             </ul>
@@ -150,22 +151,21 @@
                             <p class="adr clearfix">
                                 <i class="fa fa-map-marker pull-left"></i>        
                                 <span class="adr-group pull-left">       
-                                    <span class="street-address">Uğur Mumcu Sokak</span><br>
-                                    <span class="region">67/3 - Çankaya</span><br>
-                                    <span class="postal-code">06550</span><br>
-                                    <span class="country-name">Ankara</span>
+                                    <span class="street-address">BJK Plaza. A Blok </span><br>
+                                    <span class="region">Daire 67. Kat:6,</span><br>
+                                    <span class="country-name">Besiktas, İstanbul</span>
                                 </span>
                             </p>
-                            <p class="tel"><i class="fa fa-phone"></i>0312 295 4567</p>
+                            <p class="tel"><i class="fa fa-phone"></i>0850 840 74 36</p>
                             <p class="email"><i class="fa fa-envelope-o"></i><a href="#">info@qlifegenomics.com</a></p>                         
                         </div><!--//footer-col-inner-->
                     </div><!--//foooter-col-->                
                     <div class="footer-col connect col-md-3 col-sm-12 col-xs-12">
                         <div class="footer-col-inner">
                             <ul class="social list-inline">
-                                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>            
+                                <!-- <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li> -->
+                                <li><a href="https://www.facebook.com/QLifeGenomics" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/qlifegenomics/" target="_blank"><i class="fa fa-instagram"></i></a></li>            
                             </ul>
                             <p>Sosyal medyadan bizi takip edin.</p>
                         </div><!--//footer-col-inner-->
@@ -177,7 +177,7 @@
         </div><!--//footer-content-->
         <div class="bottom-bar">
             <div class="container">
-                <small class="copyright">Copyright @ 2016 <a href="#" target="_blank">Qlife Genomics</a></small>                
+                <small class="copyright">Copyright @ 2016 <a href="#" target="_blank">QLife Genomics</a></small>                
             </div><!--//container-->
         </div><!--//bottom-bar-->
     </footer><!--//footer-->
@@ -204,8 +204,28 @@
     <script type="text/javascript" src="assets/js/jquery.browser.js"></script>
     <script type="text/javascript" src="assets/js/typed.min.js"></script>
     <script type="text/javascript" src="assets/js/myjs.js"></script>
+    <script>
+    $(document).ready(function() { 
+        $(".typed-text").typed({
+            strings: ["7436", "QGEN"],
+            typeSpeed: 800,
+            loop:true,
+            showCursor: false
+        });
+    });
+    </script>  
     
             
 </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79280059-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </html> 
 
