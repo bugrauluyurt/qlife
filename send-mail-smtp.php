@@ -21,16 +21,16 @@ $body_message .= '<b>E-mail:</b> ' . $mail_from . "\r\n" . "<br>";
 $body_message .= '<b>Message:</b> ' . "<br>" . $message . "<br>"; 
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.1and1.com';                       // Specify main and backup SMTP servers
+$mail->Host = 'smtp.domain.com';                       // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'alihan@globalgenetik.com';         // SMTP username
-$mail->Password = 'Ggt2014rocks';                     // SMTP password
+$mail->Username = 'email@domain.com';         // SMTP username
+$mail->Password = 'Password';                     // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->From = $mail_from;
 $mail->setFrom($mail_from);
-$mail->addAddress('alihan@globalgenetik.com');        // Add a recipient
+$mail->addAddress('username@domain.com');        // Add a recipient
 $mail->addReplyTo($mail_from, 'Information');
 
 $mail->isHTML(true);                                  // Set email format to HTML
